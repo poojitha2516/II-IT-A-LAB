@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.applet.Applet;
 
-/* <applet code = "Factorial.class" height = 300 width = 300></applet> */
+/* <applet code = "Factorial" height = 300 width = 300></applet> */
 
 public class Factorial extends Applet implements ActionListener {
 	Label l1,l2;
@@ -13,7 +13,7 @@ public class Factorial extends Applet implements ActionListener {
 	Button b1;
 	public void init() {
 		l1 = new Label("Enter any Integer: ");
-		add(t1);
+		add(l1);
 		t1 = new TextField(5);
 		add(t1);
 		b1 = new Button("Calculate");
@@ -33,6 +33,7 @@ public class Factorial extends Applet implements ActionListener {
 	}
 	
 	int fact(int f) {
+		int s = 0;
 		if(f==0) {
 			return 1;
 		}
