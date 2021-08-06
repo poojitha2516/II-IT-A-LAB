@@ -8,7 +8,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.applet.*;
 
-/* <applet code = "Division.class" width = 230 height = 250></applet> */
+/* <applet code = "Division" width = 230 height = 250></applet> */
 
 public class Division extends Applet implements ActionListener {
 	String msg;
