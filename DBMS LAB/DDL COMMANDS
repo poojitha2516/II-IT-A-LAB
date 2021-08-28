@@ -1,0 +1,11 @@
+// ddl commands
+
+CREATE TABLE Passenger(PNo int primary key,PName varchar (15),PAge int ,PSex Char(6), p_seatnum int);
+insert into Passenger values(1230, 'Poojitha', 18, 'Female',1);
+insert into Passenger values(1201, 'Sulthan', 20, 'Male',2);
+insert into Passenger values(1228, 'Shobitha', 14, 'Female',3);
+insert into Passenger values(1242, 'Sriya', 32, 'Female',4);
+update Passenger set PName = 'Aparna' where PNo = 1228;
+alter table Passenger modify PName varchar(25);
+alter table Passenger drop p_seatnum;
+select * from Passenger;
